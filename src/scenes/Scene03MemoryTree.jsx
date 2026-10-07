@@ -19,9 +19,10 @@ const MEMORIES = [
     date: "Memory I",
     caption: "Silly smiles & good times",
     photo: photo1,
+    objectPosition: 'center 4%', // Perfectly shows their full hair, faces, and smiles without cropping
     excerpt: "Casual hangouts, spontaneous laughter, and turning everyday outings into memorable adventures.",
     fullNote: "The sweetest memories aren't always grand milestones—they're the random selfies, teasing each other, and knowing that every moment spent together feels effortlessly comfortable and warm.",
-    desktopPos: { top: '22%', left: '8%', transform: 'rotate(-4deg)' },
+    desktopPos: { top: '21%', left: '8%', transform: 'rotate(-3deg)' },
     animationClass: 'swing-polaroid',
   },
   {
@@ -30,9 +31,10 @@ const MEMORIES = [
     date: "Memory II",
     caption: "Unstoppable smiles",
     photo: photo2,
+    objectPosition: 'center 20%', // Frames their faces with the bougainvillea flowers
     excerpt: "Under the blooming bougainvillea, sharing inside jokes that only the two of us understand.",
     fullNote: "No matter how busy or tiring days can be, sharing a genuine laugh with you instantly brightens everything. Seeing you smile effortlessly is one of the most comforting sights in the world.",
-    desktopPos: { top: '26%', left: '26%', transform: 'rotate(3deg)' },
+    desktopPos: { top: '26%', left: '26%', transform: 'rotate(2deg)' },
     animationClass: 'swing-polaroid-slow',
   },
   {
@@ -41,9 +43,10 @@ const MEMORIES = [
     date: "Memory III",
     caption: "Bunny ears & goofy vibes",
     photo: photo3,
+    objectPosition: 'center 14%', // Keeps bunny ears & peace signs fully in frame
     excerpt: "Flashing peace signs, goofy poses, and unmatched sibling energy.",
     fullNote: "Having this sibling bond means having a lifelong teammate in mischief, fun, and support. No matter where life takes us, you will always have someone to laugh with and someone who will always protect your smile.",
-    desktopPos: { top: '34%', left: '44%', transform: 'rotate(-2deg)' },
+    desktopPos: { top: '32%', left: '44%', transform: 'rotate(-2deg)' },
     animationClass: 'swing-polaroid-gentle',
   },
   {
@@ -52,9 +55,10 @@ const MEMORIES = [
     date: "Memory IV",
     caption: "Grace & glowing heart",
     photo: photo4,
+    objectPosition: 'center 12%', // Beautifully frames her face, hair, and red roses bouquet
     excerpt: "Holding red roses with that quiet, radiant smile that brings joy to everyone around you.",
     fullNote: "You possess a gentle and truly caring heart, Nisha. You bring so much sweetness and peace to those around you. May this special year shower you with endless love, happiness, and blooming success.",
-    desktopPos: { top: '22%', left: '62%', transform: 'rotate(4deg)' },
+    desktopPos: { top: '22%', left: '62%', transform: 'rotate(3deg)' },
     animationClass: 'swing-polaroid',
   },
   {
@@ -63,9 +67,10 @@ const MEMORIES = [
     date: "Memory V",
     caption: "Side by side, forever",
     photo: photo5,
+    objectPosition: 'center 14%', // Elegantly frames their faces and traditional attire
     excerpt: "Dressed in tradition, rooted in love, and standing tall through every chapter of life.",
     fullNote: "Life will change and we will both grow older, but one thing will never change: I will always stand beside you, cheer for your dreams, and celebrate who you are. Happy Birthday!",
-    desktopPos: { top: '28%', left: '79%', transform: 'rotate(-3deg)' },
+    desktopPos: { top: '27%', left: '79%', transform: 'rotate(-3deg)' },
     animationClass: 'swing-polaroid-slow',
   },
 ];
@@ -129,12 +134,13 @@ export default function Scene03MemoryTree({ nextScene, prevScene, currentChapter
                 }`}
               >
                 {/* Clothespin */}
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-3 h-5 bg-amber-800 rounded-xs shadow z-30" />
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-3 h-5 bg-gradient-to-b from-[#c69255] to-[#a06a36] rounded-xs shadow z-30 border border-[#7a4c1c]/60" />
                 <div className="w-36 sm:w-44 p-2 pb-4 rounded-md bg-[#faf7f2] text-slate-800 shadow-xl border border-amber-200/50">
                   <div className="aspect-square bg-slate-900 rounded-sm overflow-hidden flex items-center justify-center">
                     <img
                       src={mem.photo}
                       alt={mem.title}
+                      style={{ objectPosition: mem.objectPosition || 'center 15%' }}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -174,6 +180,7 @@ export default function Scene03MemoryTree({ nextScene, prevScene, currentChapter
                 <img
                   src={selectedMemory.photo}
                   alt={selectedMemory.title}
+                  style={{ objectPosition: selectedMemory.objectPosition || 'center 15%' }}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
