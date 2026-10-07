@@ -191,3 +191,24 @@ h1, h2, h3 {
     0 0 25px rgba(255, 215, 0, 0.15);
   border-radius: 24px;
 }
+
+/* Custom subtle golden scrollbar for long letters */
+.custom-letter-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 215, 0, 0.45) transparent;
+}
+.custom-letter-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-letter-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}
+.custom-letter-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 215, 0, 0.45);
+  border-radius: 999px;
+}
+.custom-letter-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 215, 0, 0.75);
+}
+
