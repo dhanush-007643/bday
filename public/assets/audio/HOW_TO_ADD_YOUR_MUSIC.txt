@@ -1,0 +1,24 @@
+========================================================================
+HOW TO ADD 3 SONGS (HALF-SONG SEQUENTIAL PLAYLIST)
+========================================================================
+
+1. Place your 3 audio files in:
+   c:\Users\Admin\OneDrive\Desktop\New folder (3)\public\assets\audio\
+
+2. Name the files:
+   - song1.mp3   (Song 1)
+   - song2.mp3   (Song 2)
+   - song3.mp3   (Song 3)
+
+3. How the "Half-Song" mode works:
+   - Song 1 plays from 0:00 to 50% (halfway point).
+   - As it reaches the half mark, it smoothly fades out (2-second crossfade).
+   - Song 2 automatically begins playing and fades in!
+   - Song 2 plays to 50%, smoothly fades out, and Song 3 begins.
+   - Song 3 plays to 50%, smoothly fades out, and it loops back to Song 1!
+   
+4. Controls in the top-right music player:
+   - "½ Song" button: Shows and toggles Half Mode (50%) vs Full Song mode.
+   - ⏮ / ⏭ buttons: Skip to previous / next song anytime.
+   - ⬆ (Upload) icon: Choose audio files directly from your computer to test.
+========================================================================

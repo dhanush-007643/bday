@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Great+Vibes&display=swap');
+@import './animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest: #0a1f1c;
+  --color-navy: #0b132b;
+  --color-amber: #ffaa00;
+  --color-sunflower: #ffd700;
+  --color-parchment: #f4e8d1;
+  --color-glow: rgba(255, 215, 0, 0.4);
+  
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Lato', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none; /* Prevents text highlighting during cinematic clicks */
+  -webkit-user-select: none;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* STRICTLY ENFORCED: No scrolling */
+  background-color: var(--color-navy);
+  color: #fff;
+  font-family: var(--font-body);
+}
+
+.game-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  background-color: #060913;
+}
+
+/* Base Scene Layering */
+.scene-container {
+  position: absolute;
+  inset: -2%; /* Slight bleed for parallax movement */
+  width: 104%;
+  height: 104%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scene-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Cinematic Transitions */
+.scene-transition-enter {
+  opacity: 0;
+  transform: scale(1.05) translateZ(0);
+  filter: blur(10px) brightness(0.4);
+}
+
+.scene-transition-enter-active {
+  opacity: 1;
+  transform: scale(1) translateZ(0);
+  filter: blur(0px) brightness(1);
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 1.2s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 1.2s ease-out;
+}
+
+.scene-transition-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scene-transition-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  filter: blur(6px) brightness(0.3);
+  transition: opacity 1s ease-in, transform 1s ease-in, filter 1s ease-in;
+}
+
+/* UI Typography */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(11, 19, 43, 0.28) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+.glass-panel-translucent {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(11, 19, 43, 0.18) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.14);
+}
+
+.parchment-panel {
+  background: radial-gradient(circle at center, #fbf5e6 0%, #ecdcb6 100%);
+  color: #2b1f13;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset 0 0 40px rgba(184, 134, 11, 0.2);
+  border: 2px solid #b8860b;
+}
+
+/* Custom interactive custom cursor glow */
+.mouse-glow {
+  pointer-events: none;
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, rgba(255, 170, 0, 0.03) 40%, transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 45;
+  mix-blend-mode: screen;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Fairy Glass Letter (Scene 04) - High-end cinematic aesthetic */
+.fairy-glass-letter {
+  position: relative;
+  width: min(92vw, 620px);
+  padding: 2rem 1.75rem;
+  border-radius: 24px;
+  
+  /* The core glass effect */
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  
+  /* The premium glowing edge */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 0 20px rgba(255, 215, 0, 0.06); /* very subtle golden inner glow */
+    
+  /* To ensure text is readable */
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 640px) {
+  .fairy-glass-letter {
+    padding: 2.75rem 3rem;
+  }
+}
+
+/* Frosted Glass Sealed Envelope */
+.fairy-glass-envelope {
+  position: relative;
+  width: min(88vw, 360px);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 0 25px rgba(255, 215, 0, 0.15);
+  border-radius: 24px;
+}
