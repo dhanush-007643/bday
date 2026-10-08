@@ -21,57 +21,58 @@ const MEMORIES = [
     photo: photo1,
     objectPosition: 'center 4%', // Perfectly shows their full hair, faces, and smiles without cropping
     excerpt: "Casual hangouts, spontaneous laughter, and turning everyday outings into memorable adventures.",
-    fullNote: "The sweetest memories aren't always grand milestones—they're the random selfies, teasing each other, and knowing that every moment spent together feels effortlessly comfortable and warm.",
+    fullNote: "So,idhu dhaan namma first edutha photo... namma rendu perum mattum thaniya edutha first photo. ❤️ Appo idhu ivlo special-aagum nu enakku konjam kooda idea illa. Summa random-ah edutha oru photo dhaan. 😂 Appo enakku theriyadhu, nee en life-la ivlo close-ah aagapora nu. Epdi friendship start aachu, epdi nee enakku thangachi aana nu kooda enakku nyabagam illa. Aana ippo indha photo-va paakumbodhu romba special-ah feel aagudhu. 🥹💛
+",
     desktopPos: { top: '21%', left: '8%', transform: 'rotate(-3deg)' },
-    animationClass: 'swing-polaroid',
+  animationClass: 'swing-polaroid',
   },
-  {
-    id: 2,
+{
+  id: 2,
     title: "Laughter in Full Bloom",
-    date: "Memory II",
-    caption: "Unstoppable smiles",
-    photo: photo2,
-    objectPosition: 'center 20%', // Frames their faces with the bougainvillea flowers
-    excerpt: "Under the blooming bougainvillea, sharing inside jokes that only the two of us understand.",
-    fullNote: "No matter how busy or tiring days can be, sharing a genuine laugh with you instantly brightens everything. Seeing you smile effortlessly is one of the most comforting sights in the world.",
-    desktopPos: { top: '26%', left: '26%', transform: 'rotate(2deg)' },
-    animationClass: 'swing-polaroid-slow',
+      date: "Memory II",
+        caption: "Unstoppable smiles",
+          photo: photo2,
+            objectPosition: 'center 20%', // Frames their faces with the bougainvillea flowers
+              excerpt: "Under the blooming bougainvillea, sharing inside jokes that only the two of us understand.",
+                fullNote: "So, indha photo edhuku vandhuchu nu enakke theriyala... summa random-ah eduthadhu dhaan. 😂 Aana indha photo edukkuradhukku romba kashtapattom. Nee enna paathu siricha, naan unna paathu sirichen, rendu perum sirichite irundhom. 😂😂 Romba neram try panni, finally indha photo-va eduthom. Appo summa oru random photo maari dhaan irundhuchu... aana ippo paakumbodhu andha moment-e nenachu sirikka thonudhu.",
+                  desktopPos: { top: '26%', left: '26%', transform: 'rotate(2deg)' },
+  animationClass: 'swing-polaroid-slow',
   },
-  {
-    id: 3,
+{
+  id: 3,
     title: "Partners in Crime",
-    date: "Memory III",
-    caption: "Bunny ears & goofy vibes",
-    photo: photo3,
-    objectPosition: 'center 14%', // Keeps bunny ears & peace signs fully in frame
-    excerpt: "Flashing peace signs, goofy poses, and unmatched sibling energy.",
-    fullNote: "Having this sibling bond means having a lifelong teammate in mischief, fun, and support. No matter where life takes us, you will always have someone to laugh with and someone who will always protect your smile.",
-    desktopPos: { top: '32%', left: '44%', transform: 'rotate(-2deg)' },
-    animationClass: 'swing-polaroid-gentle',
+      date: "Memory III",
+        caption: "Bunny ears & goofy vibes",
+          photo: photo3,
+            objectPosition: 'center 14%', // Keeps bunny ears & peace signs fully in frame
+              excerpt: "Flashing peace signs, goofy poses, and unmatched sibling energy.",
+                fullNote: "Actually, idhu oru cute photo. Namma rendu perum thaniya edutha proper-ah, azhagana photo. ❤️ Idhu enoda second favourite photo. Actually, un kooda serndhu edutha proper-ah irukkura first photos-la idhuvum onnu. Appo summa oru photo maari dhaan irundhuchu... aana ippo paakumbodhu romba special-ah feel aagudhu.",
+                  desktopPos: { top: '32%', left: '44%', transform: 'rotate(-2deg)' },
+  animationClass: 'swing-polaroid-gentle',
   },
-  {
-    id: 4,
+{
+  id: 4,
     title: "The Birthday Star",
-    date: "Memory IV",
-    caption: "Grace & glowing heart",
-    photo: photo4,
-    objectPosition: 'center 12%', // Beautifully frames her face, hair, and red roses bouquet
-    excerpt: "Holding red roses with that quiet, radiant smile that brings joy to everyone around you.",
-    fullNote: "You possess a gentle and truly caring heart, Nisha. You bring so much sweetness and peace to those around you. May this special year shower you with endless love, happiness, and blooming success.",
-    desktopPos: { top: '22%', left: '62%', transform: 'rotate(3deg)' },
-    animationClass: 'swing-polaroid',
+      date: "Memory IV",
+        caption: "Grace & glowing heart",
+          photo: photo4,
+            objectPosition: 'center 12%', // Beautifully frames her face, hair, and red roses bouquet
+              excerpt: "Holding red roses with that quiet, radiant smile that brings joy to everyone around you.",
+                fullNote: "Actually, indha photo-la nee romba azhaga irukka. ❤️",
+                  desktopPos: { top: '22%', left: '62%', transform: 'rotate(3deg)' },
+  animationClass: 'swing-polaroid',
   },
-  {
-    id: 5,
+{
+  id: 5,
     title: "Always In Your Corner",
-    date: "Memory V",
-    caption: "Side by side, forever",
-    photo: photo5,
-    objectPosition: 'center 14%', // Elegantly frames their faces and traditional attire
-    excerpt: "Dressed in tradition, rooted in love, and standing tall through every chapter of life.",
-    fullNote: "Life will change and we will both grow older, but one thing will never change: I will always stand beside you, cheer for your dreams, and celebrate who you are. Happy Birthday!",
-    desktopPos: { top: '27%', left: '79%', transform: 'rotate(-3deg)' },
-    animationClass: 'swing-polaroid-slow',
+      date: "Memory V",
+        caption: "Side by side, forever",
+          photo: photo5,
+            objectPosition: 'center 14%', // Elegantly frames their faces and traditional attire
+              excerpt: "Dressed in tradition, rooted in love, and standing tall through every chapter of life.",
+                fullNote: "Aahh, ippo purinjiduchu 😄❤️ Nee sollradhu indha photo-va naan use panradhu, indha photo-la namma rendu perum proper-ah anna-thangachi maari theriyrom nu.",
+                  desktopPos: { top: '27%', left: '79%', transform: 'rotate(-3deg)' },
+  animationClass: 'swing-polaroid-slow',
   },
 ];
 
@@ -92,7 +93,7 @@ export default function Scene03MemoryTree({ nextScene, prevScene, currentChapter
     <ParallaxEnvironment background={bgMemoryTreeSunset}>
       {/* Container enforcing Layer 0 to 4 architecture */}
       <div className="w-full h-full relative select-none flex flex-col justify-between py-5 md:py-8 px-4 sm:px-8">
-        
+
         {/* Layer 3: UI Header Overlay */}
         <div className="relative z-30 text-center pointer-events-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full glass-panel text-xs font-display tracking-widest text-[#ffd700] mb-1.5 border border-amber-300/30">
@@ -129,9 +130,8 @@ export default function Scene03MemoryTree({ nextScene, prevScene, currentChapter
               <div
                 key={mem.id}
                 onClick={() => handleSelect(mem)}
-                className={`relative cursor-pointer transition-transform duration-300 ${mem.animationClass} ${
-                  selectedMemory?.id === mem.id ? 'scale-105' : 'hover:scale-102'
-                }`}
+                className={`relative cursor-pointer transition-transform duration-300 ${mem.animationClass} ${selectedMemory?.id === mem.id ? 'scale-105' : 'hover:scale-102'
+                  }`}
               >
                 {/* Clothespin */}
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-3 h-5 bg-gradient-to-b from-[#c69255] to-[#a06a36] rounded-xs shadow z-30 border border-[#7a4c1c]/60" />
