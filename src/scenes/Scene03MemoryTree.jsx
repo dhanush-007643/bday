@@ -21,58 +21,57 @@ const MEMORIES = [
     photo: photo1,
     objectPosition: 'center 4%', // Perfectly shows their full hair, faces, and smiles without cropping
     excerpt: "Casual hangouts, spontaneous laughter, and turning everyday outings into memorable adventures.",
-    fullNote: "So,idhu dhaan namma first edutha photo... namma rendu perum mattum thaniya edutha first photo. ❤️ Appo idhu ivlo special-aagum nu enakku konjam kooda idea illa. Summa random-ah edutha oru photo dhaan. 😂 Appo enakku theriyadhu, nee en life-la ivlo close-ah aagapora nu. Epdi friendship start aachu, epdi nee enakku thangachi aana nu kooda enakku nyabagam illa. Aana ippo indha photo-va paakumbodhu romba special-ah feel aagudhu. 🥹💛
-",
+    fullNote: "So,idhu dhaan namma first edutha photo... namma rendu perum mattum thaniya edutha first photo. ❤️ Appo idhu ivlo special-aagum nu enakku konjam kooda idea illa. Summa random-ah edutha oru photo dhaan. 😂 Appo enakku theriyadhu, nee en life-la ivlo close-ah aagapora nu. Epdi friendship start aachu, epdi nee enakku thangachi aana nu kooda enakku nyabagam illa. Aana ippo indha photo-va paakumbodhu romba special-ah feel aagudhu. 🥹💛",
     desktopPos: { top: '21%', left: '8%', transform: 'rotate(-3deg)' },
-  animationClass: 'swing-polaroid',
+    animationClass: 'swing-polaroid',
   },
-{
-  id: 2,
+  {
+    id: 2,
     title: "Laughter in Full Bloom",
-      date: "Memory II",
-        caption: "Unstoppable smiles",
-          photo: photo2,
-            objectPosition: 'center 20%', // Frames their faces with the bougainvillea flowers
-              excerpt: "Under the blooming bougainvillea, sharing inside jokes that only the two of us understand.",
-                fullNote: "So, indha photo edhuku vandhuchu nu enakke theriyala... summa random-ah eduthadhu dhaan. 😂 Aana indha photo edukkuradhukku romba kashtapattom. Nee enna paathu siricha, naan unna paathu sirichen, rendu perum sirichite irundhom. 😂😂 Romba neram try panni, finally indha photo-va eduthom. Appo summa oru random photo maari dhaan irundhuchu... aana ippo paakumbodhu andha moment-e nenachu sirikka thonudhu.",
-                  desktopPos: { top: '26%', left: '26%', transform: 'rotate(2deg)' },
-  animationClass: 'swing-polaroid-slow',
+    date: "Memory II",
+    caption: "Unstoppable smiles",
+    photo: photo2,
+    objectPosition: 'center 20%', // Frames their faces with the bougainvillea flowers
+    excerpt: "Under the blooming bougainvillea, sharing inside jokes that only the two of us understand.",
+    fullNote: "So, indha photo edhuku vandhuchu nu enakke theriyala... summa random-ah eduthadhu dhaan. 😂 Aana indha photo edukkuradhukku romba kashtapattom. Nee enna paathu siricha, naan unna paathu sirichen, rendu perum sirichite irundhom. 😂😂 Romba neram try panni, finally indha photo-va eduthom. Appo summa oru random photo maari dhaan irundhuchu... aana ippo paakumbodhu andha moment-e nenachu sirikka thonudhu.",
+    desktopPos: { top: '26%', left: '26%', transform: 'rotate(2deg)' },
+    animationClass: 'swing-polaroid-slow',
   },
-{
-  id: 3,
+  {
+    id: 3,
     title: "Partners in Crime",
-      date: "Memory III",
-        caption: "Bunny ears & goofy vibes",
-          photo: photo3,
-            objectPosition: 'center 14%', // Keeps bunny ears & peace signs fully in frame
-              excerpt: "Flashing peace signs, goofy poses, and unmatched sibling energy.",
-                fullNote: "Actually, idhu oru cute photo. Namma rendu perum thaniya edutha proper-ah, azhagana photo. ❤️ Idhu enoda second favourite photo. Actually, un kooda serndhu edutha proper-ah irukkura first photos-la idhuvum onnu. Appo summa oru photo maari dhaan irundhuchu... aana ippo paakumbodhu romba special-ah feel aagudhu.",
-                  desktopPos: { top: '32%', left: '44%', transform: 'rotate(-2deg)' },
-  animationClass: 'swing-polaroid-gentle',
+    date: "Memory III",
+    caption: "Bunny ears & goofy vibes",
+    photo: photo3,
+    objectPosition: 'center 14%', // Keeps bunny ears & peace signs fully in frame
+    excerpt: "Flashing peace signs, goofy poses, and unmatched sibling energy.",
+    fullNote: "Actually, idhu oru cute photo. Namma rendu perum thaniya edutha proper-ah, azhagana photo. ❤️ Idhu enoda second favourite photo. Actually, un kooda serndhu edutha proper-ah irukkura first photos-la idhuvum onnu. Appo summa oru photo maari dhaan irundhuchu... aana ippo paakumbodhu romba special-ah feel aagudhu.",
+    desktopPos: { top: '32%', left: '44%', transform: 'rotate(-2deg)' },
+    animationClass: 'swing-polaroid-gentle',
   },
-{
-  id: 4,
+  {
+    id: 4,
     title: "The Birthday Star",
-      date: "Memory IV",
-        caption: "Grace & glowing heart",
-          photo: photo4,
-            objectPosition: 'center 12%', // Beautifully frames her face, hair, and red roses bouquet
-              excerpt: "Holding red roses with that quiet, radiant smile that brings joy to everyone around you.",
-                fullNote: "Actually, indha photo-la nee romba azhaga irukka. ❤️",
-                  desktopPos: { top: '22%', left: '62%', transform: 'rotate(3deg)' },
-  animationClass: 'swing-polaroid',
+    date: "Memory IV",
+    caption: "Grace & glowing heart",
+    photo: photo4,
+    objectPosition: 'center 12%', // Beautifully frames her face, hair, and red roses bouquet
+    excerpt: "Holding red roses with that quiet, radiant smile that brings joy to everyone around you.",
+    fullNote: "Actually, indha photo-la nee romba azhaga irukka. ❤️",
+    desktopPos: { top: '22%', left: '62%', transform: 'rotate(3deg)' },
+    animationClass: 'swing-polaroid',
   },
-{
-  id: 5,
+  {
+    id: 5,
     title: "Always In Your Corner",
-      date: "Memory V",
-        caption: "Side by side, forever",
-          photo: photo5,
-            objectPosition: 'center 14%', // Elegantly frames their faces and traditional attire
-              excerpt: "Dressed in tradition, rooted in love, and standing tall through every chapter of life.",
-                fullNote: "Aahh, ippo purinjiduchu 😄❤️ Nee sollradhu indha photo-va naan use panradhu, indha photo-la namma rendu perum proper-ah anna-thangachi maari theriyrom nu.",
-                  desktopPos: { top: '27%', left: '79%', transform: 'rotate(-3deg)' },
-  animationClass: 'swing-polaroid-slow',
+    date: "Memory V",
+    caption: "Side by side, forever",
+    photo: photo5,
+    objectPosition: 'center 14%', // Elegantly frames their faces and traditional attire
+    excerpt: "Dressed in tradition, rooted in love, and standing tall through every chapter of life.",
+    fullNote: "Aahh, ippo purinjiduchu 😄❤️ Nee sollradhu indha photo-va naan use panradhu, indha photo-la namma rendu perum proper-ah anna-thangachi maari theriyrom nu.",
+    desktopPos: { top: '27%', left: '79%', transform: 'rotate(-3deg)' },
+    animationClass: 'swing-polaroid-slow',
   },
 ];
 
